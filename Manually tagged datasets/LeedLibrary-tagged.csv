@@ -1,0 +1,86 @@
+ProjectID,RequirementText,IsFunctional,IsQuality
+1,The system must offer customisable metadata schema.,0,1
+1,The system must offer customisable workflow to import or create metadata and upload associated files and support multiple ingest protocols e.g. SWORD2,1,1
+1,The system must support association of single or multiple files with one metadata record.,1,0
+1,"The system must ingest and store metadata at a data object level, where a data object is a folder that contains one or more files",1,0
+1,The system must support multiple files types including multimedia.,0,1
+1,"The system should have a simple process for ingesting large (multi-TB) data sets, potentially consisting of thousands of files. ",0,1
+1,"The system must support controlled lists against some metadata fields, either held locally or drawn from an external source e.g. Subject vocabularies",0,0
+1,"The system should support customisation of out of the box help text and provide context sensitive feedback for the depositor e.g. Highlight missing metadata fields, file upload failure alert.",1,1
+1,The system must support staged deposit workflow including an administrative area for quality checking prior to data publication.,1,0
+1,"The system must enable selective harvesting of metadata, including support for OAI-PMH sets; offer API functionality to re-users, conforming to open standards.",1,1
+1,The system must enable extraction of metadata and data  in an open format e.g. to enable migration to another repository platform.,1,1
+1,The system must support current open standards and support exposure of metadata in different ways.,0,1
+1,The system should support different types of relationship within and between data sets e.g. IsVersionOf; Is Part Of; References etc. and support navigation between related datasets.,1,0
+1,The system should support additional depositor generated and re-user generated metadata.,1,0
+1,"The system should support customisation of out of the box help text and provide context sensitive feedback for the re-user to support search, navigation and re-use.",0,1
+1,The system must support multiple content licensing options with terms and conditions exposed clearly to human and machine re-users; support default licence setting (minimum CC licences plus others).,0,1
+1,The system should enable implementation of third party preservation tools such as DROID and JHOVE.,0,1
+1,The system should auto-generate preservation metadata.,1,0
+1,The system must support versioning of datasets including clear indication of the latest version.,1,1
+1,"The system should display file size, format and software application and version for re-users",1,0
+1,The system must support technical metadata related to specific files or datasets.,1,0
+1,The system could generate a suggested data citation format / allow depositors to specify data citation format.,1,0
+1,The system must support generation of persistent unique identifiers for datasets including DOIs.,1,1
+1,The system could select multiple objects and save for download (shopping basket).,1,0
+1,The system could visualise and process data within the repository system.,1,0
+1,"The system should unpack a range of file archive formats (e.g. Zip, tar, gz, bz) to allow navigation through the archive folder structure and selective download ",1,1
+1,The system could support optional end user alerts e.g.to be notified of data change or new versions.,1,1
+1,The system must enable depositor and repository manager to specify granular access rights to the deposited data files at collection and data object level.,1,1
+1,The system should enable depositor and repository manager to specify granular access rights to the deposited data files at individual file level.,1,1
+1,"The system must support embargo options for metadata and/or associated files at collection, data object and file level.",1,0
+1,"The system must support open methods of authentication e.g. Shibboleth, OAuth, OpenID",0,1
+1,The system must enable immediate access to and download of datasets where available,1,1
+1,The system must support access to very large data sets (over 1 TB or comprising more than 1000 files).,0,1
+1,The system must support access to data sets which may be stored outside the repository e.g. In cloud based storage.,0,1
+1,The system must support access to data sets which may be stored in other national or international repositories.,0,1
+1,"The system must remove data from public view to an access controlled area, a dark archive or full deletion, generating a tombstone reference in the public display which can itself be moved to an access controlled area, a dark archive or deleted.",1,1
+1,The system must support permanent data destruction to meet any legal or ethical requirements.,1,1
+1,"The system must manage granular access to data and its associated metadata, including data held securely in a dark archive.",0,1
+1,The system must offer effective search and discovery mechanism including a variety of browse options and keyword searching,1,1
+1,"The system must generate a variety of reports analysing repository content, including records associated with an academic unit, a funder, grant number,  data creator and analysis of data by format, file size and embargo and access conditions.",1,0
+1,The system must hold funder and grant metadata associated with one or more repository records.,1,0
+1,The system must be OpenAire compliant out of the box or with simple customisation.,0,1
+1,The system should support reporting by funder to confirm a particular funder's open access data / deposit requirement has been met.,1,0
+1,The system should generate reports on repository content growth pattern over time.,1,0
+1,The system should support preservation function by generating reports on repository content.,1,0
+1,"The system should generate reports on the number and origins of repository end users, including by domain type and geographical location. ",1,0
+1,"The system must report on number and speed of data downloads and log number of data requests.  Reports should be possible over specified periods of time and against specified subsets of the repository (by Funder, by Creator, by academic unit).",1,0
+1,"The system must integrate with multiple file systems (archive file appliance, object store etc.)",0,1
+1,The system must allow creation of repository roles with different editing rights.,1,1
+1,The system must allow specification of mandatory metadata fields.,1,1
+1,The system should retain history of changes to metadata fields,1,1
+1,The system must possess a field for multiple data owners over time (previous owners should not be overwritten).,1,0
+1,"The system must import or harvest metadata and associated files from a variety of sources using established standards such as OAI-PMH, OAI-ORE.",1,1
+1,"The system must harvest / ingest / import metadata from other systems e.g. funder, grant number, equipment, author identifier, project code.",1,1
+1,"The system should be able to support externally managed unique entities e.g. identifiers such as ORCID, ResearcherID ",1,1
+1,The system could display linked data from other systems using open standards.,1,1
+1,"The system must link to associated research outputs, potentially in other systems e.g. Published papers.",1,0
+1,"The system could supply data to research management systems (for example, to enable reporting against the percentage of projects with data associated, analysable by Funder and academic unit).",1,0
+1,The system could import and display impact measures such as citation data from external sources e.g. Thomson Reuters Data Citation Index and track alt-metrics such as links and likes.,1,0
+1,The system should be compliant with the OAIS reference model.,0,1
+1,The system must have all aspects of the user interface(s) customisable by UoL,0,1
+1,The out-of-the-box user interface shall be intuitive to users,0,1
+1,The out-of-the-box user interface shall meet W3C WCAG 1.0 accessibility requirements.,0,1
+1,"The system should be able to support rapid prototyping, so proof of concept work can be carried out quickly and easily.",0,1
+1,The system should support a range of server operating systems,0,1
+1,The system must work with an Active Directory forest containing two domains,0,1
+1,The system should run in a clustered server environment in an active-passive configuration,0,1
+1,The system could run in a clustered server environment in an active-active configuration,0,1
+1,The system must support the University of Leeds central backup infrastructure,0,1
+1,Routine patching of the system shall be possible with minimal (i.e. less than 5 minutes) downtime.,0,1
+1,Routine patching of the system shall be possible with no more than 1 hours downtime,0,1
+1,"Is shall be possible to run multiple instances of the software for purposes such as QA, development / testing and training e.g. in a virtualised environment",0,1
+1,"The system must support the latest public release of the chosen operating systems, provided the release date was at least 6 months ago. Mitigate risk of version misalignment.",0,1
+1,The system must support the previous two major public releases of the chosen operating system,0,1
+1,"The system must be able to connect to a range of storage systems, including the front end storage appliance to an off-site data archive.",0,1
+1,"The system should provide an appropriate method of ensuring the integrity of datasets, such as checksums",0,1
+1,The software codebase must be managed using recognised source control system.,0,1
+1,The system should be able to deal with non-Roman scripts and special characters (e.g. those covered in the Unicode v6.2 specification),0,1
+1,"There should be detailed documentation available covering the technical architecture of the software, showing the interrelationships between the various software components and supporting services (e.g. web server, database etc.)",0,1
+1,"There must be detailed documentation available covering the processes required to install, patch and upgrade the software.",0,1
+1,There must be detailed documentation available covering the backup and restore of both the configuration of the system and the data held within it.,0,1
+1,The system must adhere to the standards as specified in the University's Information Security Policy,0,1
+1,The system must adhere to the University's Access Control Policy,0,1
+1,The system must adhere to the standards as specified in the University's Security Logging Policy,0,1
+1,The system must adhere to the standards as specified in the University's Vulnerability and Penetration Testing Policy,0,1
