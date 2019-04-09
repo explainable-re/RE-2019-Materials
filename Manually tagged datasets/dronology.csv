@@ -1,0 +1,98 @@
+ProjectID,RequirementText,IsFunctional,IsQuality
+1,"The MapComponent shall support different types of map layers (e.g.  terrain  satellite)",1,1
+1,"The MissionPlanner shall execute flight plans for multiple UAVs concurrently.",1,1
+1,"The GCS shall transmit the UAV's properties to the GCSMiddleware",1,0
+1,"The GCS shall transmit the UAV's current location to the GCSMiddleware",1,0
+1,"The GCS shall report newly connected UAVs to the GCSMiddleware.",1,0
+1,"The GCS shall assign a message frequency for all UAVs.",1,0
+1,"When the GCS receives a UAV command from the GCSMiddleware  the GCS shall forward the command to the respective UAV.",1,0
+1,"When the connection to the GCS from the GCSMiddleware is lost  the GCSMiddleware shall notify Dronology and deactivate all associated UAVs.",1,0
+1,"The GCSMiddleware shall forward commands sent from Dronology to a GCS",1,0
+1,"The GCSMiddleware shall handle state messages   monitoring messages  and mode change messages  received from an GCS.",1,0
+1,"The GCSMiddleware  shall follow a predefined set of steps to establish a connection between a GCS and Dronology",1,1
+1,"The GCSMiddleware shall handle multiple GCS",1,1
+1,"The DronologyRuntimeMonitor shall be able to receive messages from any Dronology component",1,1
+1,"When a new monitoring message is received the DronologyRuntimeMonitor shall forward the message to all subscribed clients",1,0
+1,"The DronologyRuntimeMonitor shall provide functionality to retrieve monitoring messages and distribute them to clients",1,0
+1,"The RealTimeFlightUI shall notify users when an emergency occurs.",1,0
+1,"The RealTimeFlightUI shall allow users to follow one or multiple UAVs on the map.",1,0
+1,"The RealTimeFlightUI shall allow users to perform emergency operations (e.g. hovering multiple UAVs  sending multiple UAVs to home) to a group of UAVs",1,0
+1,"The RealTimeFlightUI shall allow users to apply flight operations to one or more selected UAVs.",1,0
+1,"The RealTimeFlightUI shall display all currently active flight plans on the map.",1,0
+1,"The RealTimeFlightUI shall display the name and status of all currently activated UAVs",1,0
+1,"When the RouteCreationUI is loaded a list of all existing routes shall be displayed.",1,0
+1,"The RouteCreationUI shall allow a user to delete a route.",1,0
+1,"The RouteCreationUI shall allow the user to create and modify a route.",1,0
+1,"When requested  the RouteCreationUI shall send a newly created or modified route to dronology.",1,0
+1,"Each route shall include a unique ID  a textual description  and a set of waypoints  all of which are editable in the UI.",1,0
+1,"The RouteCreationUI shall only accept valid altitude and speed values for waypoint.",1,1
+1,"The RouteCreationUI shall distinguish between starting  ending  and intermediate waypoint markers.",1,0
+1,"When a user  cancels a pending flight plan the RouteAssignmentUI shall notify Dronology.",1,0
+1,"A user may reorder routes or remove flight plans assigned to a UAV as long as the flight has not started execution.",1,0
+1,"When a UAV is selected  the RouteAssignmentUI shall display its active flight plans.",1,0
+1,"When requested by the user  the RouteAssignmentUI shall display details about the selected UAV and its flight plans.",1,0
+1,"When a route is assigned or removed from a UAV  the RouteAssignmentUI shall notify Dronology.",1,0
+1,"The RouteAssignmentUI shall provide means to select an existing routes and assign them to a UAV.",1,0
+1,"When loading the map view it shall be positioned at the pre-defined location",1,1
+1,"When the VaadinUI is activated  the VaadinUI shall be configured according to stored configuration parameters.",1,1
+1,"The UIMiddleware shall accept and activate a mission plan upon request.",1,0
+1,"The UIMiddleware shall enable an existing route to be assigned to an active UAV.",1,0
+1,"The UIMiddleware shall enable the creation and modification of flight routes",1,0
+1,"The UIMiddleware accepts commands from UIs and forwards to Dronology",1,0
+1,"The UIMiddleware shall provide a list of all existing routes",1,0
+1,"The UIMiddleware shall provide a list of all active UAVs",1,0
+1,"The ActivityLogger shall log all commands sent to and messages received from a CGS.",1,1
+1,"The ActivityLogger shall log all flight plan related events.",1,1
+1,"The InternalSimulator shall approximate the state of the battery",1,0
+1,"When given a landing command the InternalSimulator shall move the UAV from to the ground altitude corresponding to its current longitude and latitude.",1,0
+1,"When given a goto command  the InternalSimulator shall update the location of the UAV at increments of {{SIMULATIONSTEPSIZE}} meters  moving it towards the target destination until the destination is reached.",1,0
+1,"When given a takeoff command the InternalSimulator shall move the UAV to the takeoff altitude corresponding to its current longitude and latitude.",1,0
+1,"The InternalSimulator shall approximate the behavior of a UAV.",1,0
+1,"The UAVRegistrationManager shall store UAV meta-data information  such as the UAV's technical characteristics",1,0
+1,"When the maximum numbers of allowed activated UAVs has been reached  the UAVActivationManager shall reject any further activation requests.",1,1
+1,"When a UAV is deactivated the UAVActivationManager shall cancel all current and scheduled flight plans",1,0
+1,"The VehicleCore shall support virtual UAVs",1,0
+1,"The VehicleCore shall support UAVs connected via the GCS",1,0
+1,"When a group of UAVs are assigned flight patterns as part of a mission  the system shall provide a warning if any paths overlap.",1,1
+1,"If requested  the SingleUAVFlightPlanScheduler shall abort the currently executing flight plan of an UAV",1,0
+1,"If a UAV does not have any pending flight plans  then when it reaches the final waypoint of its current flight plan  the SingleUAVFlightPlanScheduler shall notify the UAV to hover in place.",1,0
+1,"If a scheduled flight is not manually assigned to a UAV  the SingleUAVFlightPlanScheduler shall assign the route automatically to an UAV",1,0
+1,"If a route contains a specific {{UAVID}}  the SingleUAVFlightPlanScheduler shall assign the route to the given UAV.",1,0
+1,"When requested  the SingleUAVFlightPlanScheduler shall schedule a route for execution.",1,0
+1,"When requested  if a mission is currently active  the MissionPlanner shall cancel the active mission.",1,0
+1,"The MissionPlanner shall manage predefined FlightPatterns",1,0
+1,"When a flight plan is activated for a UAV currently on the ground  the FlightSchedulingandExecution shall notify the UAV to takeoff vertically until it reaches the prescribed altitude.",1,0
+1,"If a flight plan is active and the hover in place command is rescinded  the FlightManager shall notify the UAV to continue to the originally designated waypoint.",1,0
+1,"If a flight route is assigned to a UAV which is currently hovering in place  the FlightManager shall assign the route and maintain the hover in place mode.",1,0
+1,"When the hover in place command is issued  the FlightManager shall halt the UAV in place and maintain its current position.",1,0
+1,"When given two coordinates the CoordinateSystem shall compute the direction from the first coordinate to the second coordinate.",1,0
+1,"When given two coordinates the CoordinateSystem shall compute the distance between them.",1,0
+1,"When requested  the CoordinateSystem shall transform coordinates to alternate formats.",1,1
+1,"When a flight route requires a customized takeoff altitude that differs from the system's default takeoff altitude  it shall be specified in the flight route.",1,1
+1,"The FlightRouteManager shall persist flight routes.",1,1
+1,"The FlightRouteManager shall ensure that all flight routes represent a {{VALIDFLIGHTROUTE}}.",0,1
+1,"When the return to home command is issued  the FlightManager shall return the UAV to its original launch location without issuing any additional waypoint or routing commands.",1,0
+1,"When the GCS loses the connection to an UAV  the GCS shall attempt to reconnect",1,1
+1,"The UAVActivationManager shall only activate UAVs that are registered.",0,1
+1,"When a GCS requests activation of a newly detected UAV  the GCSMiddleware shall forward the request to Dronology.",1,1
+1,"When a UAV has an active onboard Obstacle Avoidance  then the ObstacleAvoidance system shall not issue directives",1,1
+1,"The ObjectAvoidance system only issues commands within the capabilities of the UAV",1,1
+1,"If a UAV takes evasive actions the system will ensure that it will eventually reach its destination",1,1
+1,"When a stationary or moving object is within the proximity of a UAV the ObjectAvoidance system shall issue evasive directives to the UAV",1,1
+1,"The RealTimeFlightUI shall display the location of active UAVs as icons on the map.",1,0
+1,"When the RealTimeFlightUI is loaded  a map shall be displayed.",1,0
+1,"If a command is issued by the VaadinUI for an UAV  the VaadinUI shall request control of that UAV.",1,0
+1,"The UIMiddleware shall only assign one control-client at a time for each UAV.",1,1
+1,"The UIMiddleware shall provide an interface for registering UI clients.",1,1
+1,"When a UAV's current flight is cancelled  the SingleUAVFlightPlanScheduler shall in turn cancel all scheduled flight plans for that UAV.",1,0
+1,"If a UAV has pending flight plans  then when it reaches the final waypoint of its current flight plan  the SingleUAVFlightPlanScheduler shall execute the next assigned flight plan.",1,0
+1,"If requested  the SingleUAVFlightPlanScheduler shall unassign the flight plan assigned to a UAV that is awaiting execution.",1,0
+1,"The SingleUAVFlightPlanScheduler shall maintain a managed list of pending flight plans for Each UAV.",1,0
+1,"When a flight plan is executed  the VehicleCore shall send the next waypoint to the UAV.",1,0
+1,"Each waypoint shall be specified using coordinates that include longitude  latitude  and altitude.",0,0
+1,"The VehicleCore shall associate a {{UAVTYPE}} for each UAV defining its basic attributes.",1,0
+1,"The UAVActivationManager shall ensure that only one instance of each registered drone is active at any time.",1,1
+1,"The SingleUAVFlightPlanScheduler shall only execute one flight plan at a time for each UAV.",1,1
+1,"The VehicleCore shall assign a unique ID to each activated UAV.",1,1
+1,"If a client registers for notifications  the UIMiddleware shall send notifications for specific events",1,0
+1,"When requested  the VehicleCore shall shall transition the UAV between states according to allowed state transitions as depicted in the UAV state transition diagram",1,0

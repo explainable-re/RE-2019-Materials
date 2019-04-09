@@ -1,0 +1,63 @@
+ProjectID,RequirementText,IsFunctional,IsQuality
+1,There should be an application that provides functionality for mobile users to propose and schedule meetings.,1,0
+1,The WASP platform must provide services that may be used by WASP applications in order to personalize content for a specific end-user based on his or her user profile.,1,1
+1,The WASP platform should provide services that may be used by WASP applications in order to personalize content for a group of end-users based on their user profiles.,1,1
+1,The WASP platform must provide services that may be used by a WASP application to charge the user for using one of his services.,1,0
+1,The WASP platform must allow end-users to provide profile and context information explicitly to applications or the platform.,1,0
+1,A user's profile must contain at least one charging point for a specific user.,0,0
+1,A WASP application must be authorized by the end-user before charging his account.,0,1
+1,The WASP platform shall provide functionality to find points of interest that match the user's explicit need and obey the restrictions following from the user's profile and current context.,1,1
+1,"The WASP platform must allow end-users to place triggers to be alerted automatically for a certain type of point of interests, based on his/her context.",1,0
+1,"The WASP platform must allow end-users to place triggers in the platform to be alerted automatically for a certain type of services and events, based on his/her context.",1,0
+1,The WASP platform shall provide functionality to search for other people registered in the platform.,1,0
+1,The WASP platform shall provide functionality to find services that match the user's explicit need and obey the restrictions following from the user's profile and current context. For the found services the WASP platform shall provide (links to) the service profiles.,1,0
+1,The WASP platform shall allow end-users to maintain a buddy list.,1,0
+1,The WASP platform shall provide functionality for end-users to communicate with their buddies.,1,0
+1,The WASP platform should be able to use several communication services offered by the 3G platform.,0,1
+1,"The WASP platform shall be able to update status and location information of buddies in the user's buddy list based either on request of the user, after login into the WASP platform and at a regular interval.",1,0
+1,The WASP platform must allow end-users to set alerts in the platform on changes in the status and/or location of his buddies.,1,0
+1,"When changes are discovered in the status and/or location of a user's buddy, the WASP platform must sent out notifications according to the alerts set by the user",1,0
+1,A WASP application shall be able to setup a phone call connection using the 3G Platform via the WASP platform.,1,1
+1,"The WASP platform shall allow status information to be stored, updated, retrieved and deleted in the user's profile in the WASP platform if the user allows this.",1,0
+1,"The WASP platform shall allow end-users to give and remove Create, Read, Update, Delete (CRUD) access rights on parts of the user profile to other users, specific WASP applications and the 3G Platform.",1,1
+1,"The WASP platform shall allow other users, WASP applications and/or the 3G Platform to ask the end- user for access rights on parts of the user profile.",1,1
+1,The WASP platform must be able to collect profile and context information on the user from multiple sources.,1,0
+1,The WASP platform should allow end-users to delegate and remove the rights to give access to parts of the user profile to other users.,1,1
+1,The WASP platform shall provide functionality to retrieve the current location of the user.,1,0
+1,The WASP platform must be able to retrieve status information from the 3G Platform.,1,0
+1,The WASP platform must be able to retrieve location information from the 3G Platform.,1,0
+1,It must be possible for a WASP application to send out messages to users using the WASP platform.,1,0
+1,"A WASP application should be able to automatically adapt content and the presentation of functionality to the user's device, for which the WASP platform may offer some generic adaptation services.",1,1
+1,The WASP platform must be able to combine knowledge about the end-user (in terms of profile and context) and a specific information request into a search query on the service registry.,1,0
+1,The WASP platform must be able to draw a map of a given area.,1,0
+1,The WASP platform must be able to show the location of users on a map.,1,0
+1,The WASP platform must be able to show the location of various points of interests on a map.,1,0
+1,The WASP platform shall be able to obtain the geographic location of points of interests.,1,0
+1,The WASP platform must be able to display a route connecting two or more points on a map.,1,0
+1,The WASP platform should be able to provide the end-user with walking or driving instructions.,1,0
+1,"The WASP platform must be able to render all maps on small, mobile devices, as well as large, fixed terminals.",0,1
+1,The platform must be able to access points of interests and services from a map.,1,0
+1,"The WASP platform should be able to calculate a route between two or more arbitrarily chosen points, avoiding traffic jams or construction works.",1,0
+1,"The WASP platform should have access to information about traffic jams and construction works, as well as suggested alternative routes.",1,0
+1,The WASP platform should be possible to determine the location of touristic attractions close to a calculated route.,1,0
+1,The WASP platform should be able to determine whether a traffic jam lies on a suggested route.,1,0
+1,The WASP platform must allow end-users to set an alert on an event.,1,0
+1,The WASP platform should allow the end-user to specify the notification type when setting an alert.,1,0
+1,The WASP platform must maintain a list of events the end-user can be notified about.,1,0
+1,The WASP platform must allow the end-user to remove previously set alerts on events.,1,0
+1,"The WASP platform must notify the end-user about the occurrence of an event for which an alert was set, as soon as the event occurs.",1,0
+1,The WASP platform should be able to decide how to notify the user of an alert for which an event was set.,1,0
+1,The WASP platform must actively monitor all events.,1,1
+1,"If the user cannot be notified of the event the first time, the WASP platform should retry to notify the user of the occurrence of the event, until the user has been notified or a specified time-out elapses.",1,1
+1,There must not be any application data on the end-user's device. Only terminal capabilities may be terminal dependent and those capabilities may be stored on the end-user's device.,0,1
+1,The WASP platform must maintain authentication credentials per user.,1,1
+1,The WASP platform should be able to request the user's ID from the 3G platform.,1,0
+1,The WASP platform should have a (limited) number of classification schemes for POIs and services.,1,1
+1,The WASP platform must have a (web-based) form to specify simple POI and service profiles.,1,0
+1,The WASP platform should offer a tool that helps the 3rd party service provider to specify more complex profiles.,1,1
+1,The platform must be able to store POI and service profiles.,1,0
+1,The WASP platform must allow for users to have different roles.,1,0
+1,Profiles must have associated expiry dates. The registry must check for their existence and should enforce them. The registry may supply a default expiry date if none was specified.,1,0
+1,"Services must have associated schedule information (this service is available weekdays from 8:00 till 16:00), a service may be available 24/7. The registry must check for their existence, it may supply a default schedule if none was specified.",1,0
+1,"The WASP platform shall follow international standards as much as possible for web service description, invocation, and registries as well as for the profiles of users, points of interests and services, and internal standards should be developed such that they are flexible and easily extensible.",0,1
+1,The WASP platform shall handle all requests in a best-effort manner.,0,1
