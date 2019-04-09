@@ -6,5 +6,5 @@ This repository includes the supplementary material for our RE 2019 submisson ti
 
 - Data with various featuresets are provided in "Datasets with features". We cannot mention all different feature sets in the paper due to space limitations but provide them here for the curious readers.
 
-- Plots we could not put in the paper due to space limitations are provided in "Plots" folder. 
+- Plots and tables we could not put in the paper due to space limitations are provided in "Plots and Tables" folder. 
 
