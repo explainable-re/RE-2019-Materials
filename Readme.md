@@ -9,25 +9,27 @@ This repository includes the supplementary material for our RE 2019 submisson ti
   6. ling_classif_performance.ipynb classifies the requirements and reports the classification performance using the additional features extracted in the previous notebook.
   7. skope_rules.ipynb extracts logic rules that cover the classification using the skoperules library.
   8. rulematrix.ipynb extracts logic rules that cover the classification results using the RuleMatrix library.
-  
+
+The figure below describes the flow of how datasets and the notebooks are used for the paper.
+
 ![Image flow](flow.png "Flow of our package")
 
 
 - All datasets are provided in the "Manually tagged datasets" folder. We have removed the requirements text from those with sensitive data. Below we list how specific files are mentioned in the paper:
- * 8combined.csv: Combination of all 8 datasets listed in the paper
- * Dronology.csv: Dronology dataset
- * ds2.csv: Helpdesk dataset
- * ds3.csv: User mgmt dataset
- * INDcombined.csv: Combination of seven industrial datasets
- * leeds.csv: Leeds library dataset
- * promise-reclass.csv: PROMISE dataset
- * reqview.csv: ReqView dataset
- * wasp.csv: WASP dataset
+   * 8combined.csv: Combination of all 8 datasets listed in the paper
+   * Dronology.csv: Dronology dataset
+   * ds2.csv: Helpdesk dataset
+   * ds3.csv: User mgmt dataset
+   * INDcombined.csv: Combination of seven industrial datasets
+   * leeds.csv: Leeds library dataset
+   * promise-reclass.csv: PROMISE dataset
+   * reqview.csv: ReqView dataset
+   * wasp.csv: WASP dataset
  
 - Data with various feature sets are provided in "Datasets with features". We cannot mention all different feature sets in the paper due to space limitations but provide them here for the interested readers. The identifier of the features are provided as the column headers. Below we present the mapping between the file names and feature sets in the paper:
- * Filename contains 'sd' only includes feature set FS1
- * Filename contains 'sdsb8' includes feature set FS2
- * Filename contains 'allext' includes feature set FS3
+   * Filename contains 'sd' only includes feature set FS1
+   * Filename contains 'sdsb8' includes feature set FS2
+   * Filename contains 'allext' includes feature set FS3
  
 - Plots and tables we could not put in the paper due to space limitations are provided in "Plots and Tables" folder. 
 
