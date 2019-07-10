@@ -1,3 +1,7 @@
+
+
+[![DOI](https://zenodo.org/badge/179983870.svg)](https://zenodo.org/badge/latestdoi/179983870)
+
 This repository includes the supplementary material for our RE 2019 submisson titled as "Requirements Classification with Interpretable Machine Learning and Dependency Parsing"
 
 - All notebooks we have used to extract feature values and analyze data as well as a reconstruction of the state-of-the-art classifier is provided in the Notebooks folder. Each notebook includes its own detailed explaination of the tasks it executes.
